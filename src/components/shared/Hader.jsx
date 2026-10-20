@@ -3,10 +3,10 @@ import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { format } from "date-fns";
 
-const Header = ({ date }) => {
+const Hader = ({ date }) => {
   return (
     <div className="text-center py-3 space-y-2">
-      <Image
+       <Image
         src={logo}
         width={200}
         height={100}
@@ -21,4 +21,4 @@ const Header = ({ date }) => {
   );
 };
 
-export default Header;
+export default Hader;
