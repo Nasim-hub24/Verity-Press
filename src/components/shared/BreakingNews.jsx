@@ -70,9 +70,9 @@ const BreakingNews = () => {
     return (
         <div className='flex justify-between gap-4 items-center bg-amber-100 py-4 px-2 container mx-auto'>
             <button className='btn bg-amber-900 text-white'>Latest News</button>
-            <Marquee>
+            <Marquee className='gap-4'>
                     {news.map((n) =>{
-                        return <span key={n._id}>(n.title) </span>
+                        return <span key={n._id}>{n.title} </span>
                     } )}
             </Marquee>
         </div>
