@@ -1,4 +1,5 @@
- import { cacheLife } from "next/cache";
+ import LeftSideBar from "@/components/homepage/news/LeftSideBar";
+import { cacheLife } from "next/cache";
 
 async function getCategories() {
   "use cache";
@@ -22,8 +23,7 @@ export default async function Home() {
   return (
     <div className="container mx-auto grid grid-cols-12 gap-4 my-[30px]">
       <div className="col-span-2  p-2">
-        <h2 className="text-l font-bold mb-4">All Categories</h2>
-
+        {/* <h2 className="text-l font-bold mb-4">All Categories</h2>
         <ul className="flex flex-col gap-4">
           {categories.news_category.map((category) => (
             <li
@@ -33,7 +33,8 @@ export default async function Home() {
               {category.category_name}
             </li>
           ))}
-        </ul>
+        </ul> */}
+        <LeftSideBar categories={categories} activeId={null}></LeftSideBar>
       </div>
 
       <div className="col-span-8 bg-gray-500 p-4">
