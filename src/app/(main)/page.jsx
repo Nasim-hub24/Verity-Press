@@ -1,4 +1,5 @@
  import LeftSideBar from "@/components/homepage/news/LeftSideBar";
+import RightSideBar from "@/components/homepage/RightSideBar";
 import { cacheLife } from "next/cache";
 
 async function getCategories() {
@@ -34,15 +35,15 @@ export default async function Home() {
             </li>
           ))}
         </ul> */}
-        <LeftSideBar categories={categories} activeId={null}></LeftSideBar>
+        <LeftSideBar categories={categories} activeId={"05"}></LeftSideBar>
       </div>
 
       <div className="col-span-8 bg-gray-500 p-4">
         News section
       </div>
 
-      <div className="col-span-2 bg-gray-500 p-4">
-        Icons
+      <div className="col-span-2 p-2">
+        <RightSideBar></RightSideBar>
       </div>
     </div>
   );
