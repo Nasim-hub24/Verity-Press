@@ -15,14 +15,14 @@ const RightSideBar = () => {
                 <button className='btn border-blue-400 text-blue-500'><FaGoogle />Log in with google</button>
                 <button className='btn'><FaGithub />Log in with github</button>
             </div>
-            <dev>
+            <div>
                 <h1 className='font-bold text-lg mt-5'>Find us on</h1>
                 <div className='flex flex-col gap-2'>
                     <button className='btn border-blue-400 text-blue-500'><FaFacebook />Facebook</button>
                     <button className='btn'><FaInstagramSquare />Instagram</button>
                     <button className='btn'><FaTwitter />Twitter</button>
                 </div>
-            </dev>
+            </div>
         </div>
     );
 };

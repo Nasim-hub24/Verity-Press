@@ -1,7 +1,9 @@
  import LeftSideBar from "@/components/homepage/news/LeftSideBar";
 import RightSideBar from "@/components/homepage/RightSideBar";
 import { cacheLife } from "next/cache";
-
+export const metadata = {
+  title: "Verity-Press-Career",
+};
 async function getCategories() {
   "use cache";
   cacheLife("hours");
